@@ -1,0 +1,6 @@
+<!--APP COMPONENT-->
+<div style="border:2px solid #222; padding:12px; margin:12px 0;">
+<h2 style="margin-top:0;">APP COMPONENT (genitore)</h2>
+<!--app-comp1-->
+<app-comp1 *ngFor="let post of posts" [titolo]="post.titolo" [testo]="post.testo"></app-comp1>
+</div>
