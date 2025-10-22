@@ -25,6 +25,13 @@ export class App {
     {
       titolo: 'titolo3',
       testo: 'esempio di testo3'
+    },
+    {
+      titolo: 'titolo3',
+      testo: 'elorem ipsum dolor sit amet, consectetur adipiscing elit'
     }
   ];
+  get filteredPosts() {
+    return this.posts.filter(post => post.testo.length < 20);
+  }
 }
